@@ -1,0 +1,12 @@
+global using System.Reflection;
+global using System.Text.Json.Serialization;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Logging.Abstractions;
+global using MASS4.Attributes;
+global using Turian.Engine.Core;
+global using Turian.Editor.Core;
+global using Xunit;
+global using Microsoft.CodeAnalysis;
+global using Microsoft.CodeAnalysis.CSharp;
+global using NSubstitute;
+global using Key = Silk.NET.Input.Key;

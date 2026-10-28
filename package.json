@@ -1,0 +1,31 @@
+{
+  "id": "org.mass4.turian.ddd",
+  "version": "1.0.0",
+  "displayName": "DataAsset-Driven Design",
+  "description": "Designer-wired gameplay assets.",
+  "author": "MASS4",
+  "license": "MPL-2.0",
+  "scopes": [
+    "project",
+    "studio"
+  ],
+  "categories": [
+    "turian:gameplay"
+  ],
+  "roles": {
+    "source": "Brick~/Source",
+    "tests": "Brick~/Tests",
+    "precast": "Brick~/Precast"
+  },
+  "exclude": [
+    "Brick~/Tests",
+    "Brick~/Benchmarks",
+    ".github",
+    ".gitignore",
+    ".script-*.py",
+    ".script-*.cs",
+    ".script-*.sh"
+  ],
+  "bake": "auto",
+  "dependencies": {}
+}
