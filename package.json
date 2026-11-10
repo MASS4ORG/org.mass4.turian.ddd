@@ -5,13 +5,8 @@
   "description": "Designer-wired gameplay assets.",
   "author": "MASS4",
   "license": "MPL-2.0",
-  "scopes": [
-    "project",
-    "studio"
-  ],
-  "categories": [
-    "turian:gameplay"
-  ],
+  "scopes": ["project", "studio"],
+  "categories": ["turian:gameplay"],
   "roles": {
     "source": "Brick~/Source",
     "tests": "Brick~/Tests",
@@ -24,8 +19,8 @@
     ".gitignore",
     ".script-*.py",
     ".script-*.cs",
-    ".script-*.sh"
+    ".script-*.sh",
+    ".script-*.ps1"
   ],
-  "bake": "auto",
-  "dependencies": {}
+  "bake": "auto"
 }
