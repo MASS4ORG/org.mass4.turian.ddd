@@ -129,6 +129,13 @@ static class FrameComparison
         public void AfterFixedTicks(double alpha) { }
     }
 
+    // Drains after the emitter in every tick, as the session's FixedCommit phase does in a running game.
+    sealed class Commit(DataAssetSession session) : IFixedTickSystem
+    {
+        public void FixedTick(long tick, double deltaTime) => session.Drain();
+        public void AfterFixedTicks(double alpha) { }
+    }
+
     sealed class FrameCase : IDisposable
     {
         readonly DataAssetSession session = new();
@@ -159,8 +166,7 @@ static class FrameComparison
             else { publish = World.Receive; }
             ticker = new SceneTicker(new SceneManager(new AssetDatabase()))
             {
-                DataAssets = session,
-                Systems = [new Emitter(raises, publish)],
+                Systems = [new Emitter(raises, publish), new Commit(session)],
             };
         }
 

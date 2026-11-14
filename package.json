@@ -1,6 +1,6 @@
 {
   "id": "org.mass4.turian.ddd",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "displayName": "DataAsset-Driven Design",
   "description": "Designer-wired gameplay assets.",
   "author": "MASS4",
